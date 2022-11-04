@@ -1,0 +1,56 @@
+.about-1 {
+  background-color: #fff;
+  min-height: 50vh;
+}
+.heading {
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+}
+.text-1 {
+  opacity: 0.6;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 720px;
+}
+.line {
+  height: 10px;
+  background-color: azure;
+  width: 80%;
+  margin: 2rem 0;
+}
+.statistics {
+  width: 100%;
+  padding: 5rem 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.stat h3 {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+}
+.stat p {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .line {
+    width: 100%;
+  }
+  .text-1 {
+    width: 100%;
+  }
+  .statistics {
+    padding: 5rem 1%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+}

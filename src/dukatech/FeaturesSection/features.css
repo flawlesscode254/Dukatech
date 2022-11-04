@@ -1,0 +1,13 @@
+.features {
+  padding: 1rem 20vw;
+}
+@media (max-width: 1024px) {
+  .features {
+    padding: 1rem 10vw;
+  }
+}
+@media (max-width: 500px) {
+  .features {
+    padding: 1rem 1vw;
+  }
+}

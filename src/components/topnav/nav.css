@@ -1,0 +1,126 @@
+.md-header {
+  background-color: #fff;
+}
+.md-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.1rem 7rem;
+}
+
+.md-nav-button {
+  background-color: var(--blue);
+  color: #fff;
+  padding: 0.3rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-left: 1rem;
+}
+.md-nav-button:hover {
+  background-color: #fff;
+  border: rgb(201, 199, 199) solid 1px;
+  color: #222;
+}
+.md-nav-link {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  color: #222;
+  position: relative;
+  margin: 0 0.5rem;
+}
+.md-nav-link:hover {
+  color: var(--blue);
+  font-weight: 500;
+}
+.md-nav-link svg {
+  position: absolute;
+  top: 3px;
+}
+
+.md-logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.dropdown {
+  display: none;
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 200px;
+}
+.dropdown li {
+  border-bottom: rgb(201, 199, 199) solid 0.4px;
+
+  padding: 1rem;
+}
+.dropdown li a {
+  color: #222;
+}
+.dropdown li a:hover {
+  color: var(--blue);
+}
+.dropdown {
+  display: block;
+  position: absolute;
+  top: 6.3rem;
+}
+.sm-nav {
+  display: none;
+}
+@media (max-width: 1084px) {
+  .md-nav {
+    display: none;
+  }
+  .sm-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .md-nav-link {
+    border-bottom: rgb(201, 199, 199) 1px solid;
+    width: 100%;
+    padding: 1rem 0.5rem;
+    position: relative;
+  }
+  .md-nav-link:hover {
+    color: #fff;
+    background-color: var(--blue);
+  }
+  .md-nav-link svg {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+  }
+  .dropdown-sm {
+    width: 100%;
+    position: relative;
+  }
+  .dropdown-sm li {
+    padding: 1rem 2rem;
+    cursor: pointer;
+
+    border-bottom: rgb(201, 199, 199) 1px solid;
+  }
+  .dropdown-sm li:hover a {
+    color: var(--blue);
+  }
+  .dropdown-sm li a {
+    color: black;
+  }
+  .md-logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .md-nav-button {
+    margin: 1rem 0;
+  }
+  .md-logo svg {
+    position: absolute;
+    top: 1rem;
+    right: 8%;
+  }
+}
